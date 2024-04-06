@@ -94,7 +94,7 @@ export const problems = [
     solutions: [
       {
         title: "",
-        site: "",
+        site: sites.yt,
         url: "https://www.youtube.com/watch?v=1IUzNJ6TPEM",
       },
     ],

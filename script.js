@@ -1,11 +1,11 @@
 import { problems } from "./db/problems.js";
 import { UserDb } from "./db/userDb.js";
-import { router, routerRules } from "./routers.js";
+import { router, routingRules } from "./routers.js";
 
 window.addEventListener("hashchange", router);
 window.addEventListener("load", router);
-window.addEventListener("hashchange", routerRules);
-window.addEventListener("load", routerRules);
+window.addEventListener("hashchange", routingRules);
+window.addEventListener("load", routingRules);
 
 document.querySelector("#export").addEventListener("click", () => {
   const data = UserDb.get().problems;

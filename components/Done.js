@@ -1,20 +1,20 @@
 import { getProblemOfDay, problems } from "../db/problems.js";
+import { Component } from "./Component.js";
 
-class Done extends HTMLElement {
+class Done extends Component {
   constructor() {
     super();
-    const todaysProblem = problems[getProblemOfDay()];
-    this.patterns = todaysProblem.patterns;
-    this.solutions = todaysProblem.solutions;
-    this.innerHTML = this.render();
   }
 
   render() {
+    const todaysProblem = problems[getProblemOfDay()];
+    const patterns = todaysProblem.patterns;
+    const solutions = todaysProblem.solutions;
     return /*HTML*/ `
       <confettiful-comp>
         <div class="references">
           <div class="patterns">
-            ${this.patterns
+            ${patterns
               .map((pattern) => {
                 return /*HTML*/ `
                 <div class="pattern">
@@ -44,7 +44,7 @@ class Done extends HTMLElement {
           <div class="solutions">
             <h2>Solutions</h2>
             <span class="badges">
-              ${this.solutions
+              ${solutions
                 .map((solution) => {
                   return /*HTML*/ `
                   <a href="${

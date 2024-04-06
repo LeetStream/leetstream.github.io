@@ -4,16 +4,27 @@ import { UserDb } from "./db/userDb.js";
 export const routers = {
   problem: "<problem-form/>",
   done: "<done-comp/>",
+  usage: /*HTML*/ `
+    <markdown-renderer src="./README.md">
+    </markdown-renderer>
+  `,
 };
 
-export function routerRules() {
+export function routingRules() {
   if (
-    UserDb.get().problems.length !== 0 &&
+    location.hash.slice(1) === "done" &&
+    (UserDb.get().problems.length === 0 ||
+      UserDb.get().problems[UserDb.get().problems.length - 1].index !==
+        getProblemOfDay())
+  )
+    location.hash = "";
+  else if (
+    UserDb.get().problems.length > 0 &&
     UserDb.get().problems[UserDb.get().problems.length - 1].index ===
-      getProblemOfDay()
+      getProblemOfDay() &&
+    ["", "problem"].includes(location.hash.slice(1))
   )
     location.hash = "done";
-  else if (location.hash.slice(1) === "done") location.hash = "";
 }
 
 export function router() {
