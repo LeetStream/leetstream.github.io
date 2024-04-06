@@ -25,7 +25,9 @@ document.querySelector("#export").addEventListener("click", () => {
                       return `"${v.map((it) => it.name).join(",")}"`;
                   })
                   .join(",")
-              : value
+              : key === "note" ? 
+              `"${value}"` :
+              value
           )
           .join(",")
       )
