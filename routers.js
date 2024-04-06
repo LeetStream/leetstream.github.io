@@ -2,7 +2,7 @@ import { getProblemOfDay } from "./db/problems.js";
 import { UserDb } from "./db/userDb.js";
 
 export const routers = {
-  problem: "<problem-form/>",
+  "/": "<problem-form/>",
   done: "<done-comp/>",
   usage: /*HTML*/ `
     <markdown-renderer src="./README.md">
@@ -31,5 +31,5 @@ export function router() {
   const path = window.location.hash.slice(1);
   const contentDiv = document.getElementById("content");
 
-  contentDiv.innerHTML = routers[path || "problem"];
+  contentDiv.innerHTML = routers[path || "/"];
 }

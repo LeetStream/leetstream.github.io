@@ -6,6 +6,8 @@ window.addEventListener("hashchange", router);
 window.addEventListener("load", router);
 window.addEventListener("hashchange", routingRules);
 window.addEventListener("load", routingRules);
+window.addEventListener("hashchange", activeNavLink);
+window.addEventListener("load", activeNavLink);
 
 document.querySelector("#export").addEventListener("click", () => {
   const data = UserDb.get().problems;
@@ -38,8 +40,18 @@ document.querySelector("#export").addEventListener("click", () => {
 
   const a = document.createElement("a");
   a.href = url;
-  a.download = `problems${new Date().toISOString().replaceAll(":", "-")}.csv`;
+  a.download = `problems_${new Date().toISOString().replaceAll(":", "-")}.csv`;
   document.body.appendChild(a);
   a.click();
   window.URL.revokeObjectURL(url);
 });
+
+function activeNavLink() {
+  document.querySelectorAll("nav li a").forEach((link) => {
+    link.classList.remove("active");
+  });
+  document
+    .querySelector(`nav li a[href="${location.hash || "/"}"]`)
+    .classList.add("active");
+}
+
