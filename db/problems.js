@@ -7,7 +7,7 @@ export function getProblemOfDay() {
   currentDate.toLocaleString("en-US", { timeZone: "Africa/Cairo" });
   return (
     Math.floor(
-      (currentDate.getTime() - new Date("2024-04-05T00:00:00").getTime()) /
+      (currentDate.getTime() - new Date("2024-04-07T00:00:00").getTime()) /
         (1000 * 3600 * 24)
     ) % problems.length
   );
