@@ -28,7 +28,10 @@ class Done extends Component {
                         }" target="_blank" class="badge-container">
                           <span class="badge" style="background: ${
                             article.site.color || "#9b9b9b"
-                          };">${article.title}</span>
+                          };">
+                            ${article.title}
+                            <span style="font-size: 16px;"> &#x1f855; </span>
+                          </span>
                         </a>
                       `;
                       })
@@ -52,7 +55,10 @@ class Done extends Component {
                   }" target="_blank" class="badge-container">
                     <span class="badge" style="background: ${
                       solution.site.color || "#9b9b9b"
-                    };">${solution.title || solution.site.name}</span>
+                    };">
+                      ${solution.title || solution.site.name}
+                      <span style="font-size: 16px;"> &#x1f855; </span>
+                    </span>
                   </a>
                 `;
                 })

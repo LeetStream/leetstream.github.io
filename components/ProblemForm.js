@@ -106,7 +106,7 @@ class ProblemForm extends Component {
     return /*HTML*/ `
     <div class="hero">
       <div class="problem">
-        <a href="#" id="title">
+        <a href="#" id="title" target="_blank" class="title">
           <h1>Number of Connected Components in an Undirected Graph</h1>
         </a>
         <span class="badge" id="difficulty">High 🔥</span>

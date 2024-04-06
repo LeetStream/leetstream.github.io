@@ -1,3 +1,5 @@
+// Use simpleicons.org for icons
+
 export const sites = {
   DesignGurus: {
     name: "Design Gurus",

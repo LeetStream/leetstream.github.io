@@ -209,6 +209,36 @@ input[type="url"] {
   min-width: 16ch;
 }
 
+a.title[target="_blank"] {
+  position: relative;
+}
+
+a.title[target="_blank"]:after {
+  position: absolute;
+  content: "\1f855";
+  color: white;
+  top: 11px;
+  right: 0px;
+  font-size: 29px;
+  line-height: 1px;
+  height: 11px;
+  width: 9px;
+  border-right: 7px solid black;
+  border-top: 5px solid black;
+  border-radius: 5px;
+}
+
+a.title[target="_blank"]:before {
+  position: absolute;
+  content: " ";
+  top: 11px;
+  right: 0px;
+  border: 2px solid white;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
 textarea {
   max-width: 64ch;
   width: 90vw;
