@@ -11,7 +11,7 @@ document.querySelector("#export").addEventListener("click", () => {
   const data = UserDb.get().problems;
 
   const csvContent =
-    "Title,Difficulty,Patterns,URL,Companies,Tags,Hints,Bugs,Time,Solution Type,Score,My Solution Url,Note\n" +
+    "Title,Difficulty,Patterns,URL,Companies,Tags,Hints,Bugs,Time,Solution Type,Score,My Solution URL,Note\n" +
     data
       .map((item) =>
         Object.entries(item)
