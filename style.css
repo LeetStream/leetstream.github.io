@@ -205,7 +205,8 @@ select {
 }
 
 input[type="url"] {
-  width: 42ch;
+  width: 30vw;
+  min-width: 16ch;
 }
 
 textarea {
