@@ -321,3 +321,7 @@ confettiful-comp h2 {
   align-items: center;
   justify-content: center;
 }
+
+#content {
+  margin: 0 2rem;
+}
