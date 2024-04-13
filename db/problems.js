@@ -22,7 +22,7 @@ export const problems = [
     url: "https://leetcode.com/problems/sqrtx",
     solutions: [
       {
-        title: "",
+        title: "Solution: Sqrt",
         site: sites.DesignGurus,
         url: "https://www.designgurus.io/course-play/grokking-the-coding-interview/doc/63d9065f4c5ef6536969a6ab",
       },
@@ -55,7 +55,7 @@ export const problems = [
     url: "https://leetcode.ca/all/243.html",
     solutions: [
       {
-        title: "",
+        title: "Solution: Shortest Word Distance",
         site: {},
         url: "https://aaronice.gitbook.io/lintcode/hash-table/shortest-word-distance",
       },
@@ -99,7 +99,7 @@ export const problems = [
     url: "https://leetcode.com/problems/check-if-the-sentence-is-pangram",
     solutions: [
       {
-        title: "",
+        title: "Solution: Pangram",
         site: sites.DesignGurus,
         url: "https://www.designgurus.io/course-play/grokking-the-coding-interview/doc/63d9b9024bb2155485a1a03a",
       },
@@ -1101,12 +1101,12 @@ export const problems = [
     url: "https://leetcode.com/problems/find-the-duplicate-number",
     solutions: [
       {
-        title: "",
+        title: "If Programming Was An Anime | Part I",
         site: sites.yt,
         url: "https://www.youtube.com/watch?v=pKO9UjSeLew",
       },
       {
-        title: "",
+        title: "Programming Anime: Floyd's Algorithm Explained | Part II",
         site: sites.yt,
         url: "https://www.youtube.com/watch?v=9YTjXqqJEFE",
       },
@@ -2792,7 +2792,7 @@ export const problems = [
     url: "https://leetcode.ca/2016-08-27-271-Encode-and-Decode-Strings/",
     solutions: [
       {
-        title: "",
+        title: "Solution: Encode and Decode Strings",
         site: {},
         url: "https://algo.monster/liteproblems/271",
       },
@@ -5200,7 +5200,7 @@ export const problems = [
     url: "https://leetcode.com/problems/contains-duplicate",
     solutions: [
       {
-        title: "",
+        title: "Solution: Contains Duplicate",
         site: sites.DesignGurus,
         url: "https://www.designgurus.io/course-play/grokking-the-coding-interview/doc/63d906094c5ef6536969a376",
       },
