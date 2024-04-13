@@ -12,7 +12,7 @@ class Done extends Component {
     const solutions = todaysProblem.solutions;
     return /*HTML*/ `
       <confettiful-comp>
-        <div class="references">
+      <div class="references">
           <div class="patterns">
             ${patterns
               .map((pattern) => {
@@ -66,6 +66,14 @@ class Done extends Component {
               <contribute-button></contribute-button>
             </span>
           </div>
+        </div>
+        
+        <div class="badges">
+          ${todaysProblem.tags
+            .map((tag) => {
+              return /*HTML*/ `<span class="badge" style="background-color: #a52a2a;">${tag}</span>`;
+            })
+            .join("")}
         </div>
       </confettiful-comp>
     `;

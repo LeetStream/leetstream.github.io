@@ -3,8 +3,7 @@ export class UserDb {
   {
     maxHints: number,
     maxBugs: number,
-    problems: {
-      index: number, 
+    problems: id: {
       hints: number, 
       bugs: number, 
       time: number, 
@@ -12,13 +11,13 @@ export class UserDb {
       score: number, 
       solutionUrl: string, 
       note: string
-    }[]
+    }{}
   }
   */
   static data = JSON.parse(localStorage.getItem("stored")) || {
     maxHints: 0,
     maxBugs: 0,
-    problems: [],
+    problems: {},
   };
 
   static get() {

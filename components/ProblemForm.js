@@ -27,9 +27,11 @@ class ProblemForm extends Component {
 
     const companiesList = this.querySelector("#companies");
 
-    problem.companies.reverse().forEach((com) => {
-      const listItem = this.createElement("li");
-      listItem.innerHTML = com;
+    problem.companies.reverse().forEach((val) => {
+      const listItem = document.createElement("li");
+      listItem.classList.add("badge");
+      listItem.style.backgroundColor = "#dc143c";
+      listItem.innerText = val;
       companiesList.insertBefore(listItem, companiesList.firstChild);
     });
 
@@ -68,8 +70,8 @@ class ProblemForm extends Component {
         stored.maxBugs = Math.max(stored.maxBugs, bugsValue);
         stored.maxHints = Math.max(stored.maxHints, hintsValue);
 
-        stored.problems.forEach(
-          (p) =>
+        Object.entries(stored.problems).forEach(
+          (ki, p) =>
             (p.score = calculateScore(
               stored.maxBugs,
               stored.maxHints,
@@ -80,8 +82,7 @@ class ProblemForm extends Component {
             ))
         );
       }
-      stored.problems.push({
-        index: problemOfDay,
+      stored.problems[problem.id] = {
         hints: +hints.value,
         bugs: +bugs.value,
         time: +time.value,
@@ -96,7 +97,7 @@ class ProblemForm extends Component {
         ),
         solutionUrl: solutionUrl.value,
         note: note.value,
-      });
+      };
       UserDb.set(stored);
       location.hash = "done";
     });

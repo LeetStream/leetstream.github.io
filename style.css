@@ -325,3 +325,11 @@ confettiful-comp h2 {
 #content {
   margin: 0 2rem;
 }
+
+#companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}

@@ -14,24 +14,20 @@ document.querySelector("#export").addEventListener("click", () => {
 
   const csvContent =
     "Title,Difficulty,Patterns,URL,Companies,Tags,Hints,Bugs,Time,Solution Type,Score,My Solution URL,Note\n" +
-    data
-      .map((item) =>
-        Object.entries(item)
-          .map(([key, value]) =>
-            key === "index"
-              ? Object.entries(problems[value])
-                  .filter(([ki, _]) => ki !== "solutions")
-                  .map(([k, v]) => {
-                    if (["title", "url", "difficulty"].includes(k)) return v;
-                    else if (["patterns", "companies", "tags"].includes(k))
-                      return `"${v.map((it) => it.name).join(",")}"`;
-                  })
-                  .join(",")
-              : key === "note"
-              ? `"${value}"`
-              : value
-          )
-          .join(",")
+    Object.entries(data)
+      .map(([pId, pData]) =>
+        [
+          ...Object.entries(problems.find((p) => p.id === pId))
+            .filter(([ki, _]) => !["solutions", "id"].includes(ki))
+            .map(([k, v]) => {
+              if (["title", "url", "difficulty"].includes(k)) return `"${v}"`;
+              else if (["companies", "tags"].includes(k))
+                return `"${v.map((it) => it).join(",")}"`;
+              else if (k === "patterns")
+                return `"${v.map((it) => it.name).join(",")}"`;
+            }),
+          ...Object.entries(pData).map(([_, value]) => `"${value}"`),
+        ].join(",")
       )
       .join("\n");
 
@@ -50,8 +46,9 @@ function activeNavLink() {
   document.querySelectorAll("nav li a").forEach((link) => {
     link.classList.remove("active");
   });
-  document
-    .querySelector(`nav li a[href="${location.hash || "/"}"]`)
-    .classList.add("active");
-}
 
+  const activeLink = document.querySelector(
+    `nav li a[href="${location.hash || "/"}"]`
+  );
+  if (activeLink) activeLink.classList.add("active");
+}
