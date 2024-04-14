@@ -1,6 +1,13 @@
 export class UserDb {
   /*
   {
+    loggedIn: boolean,
+    stream: {
+      title: string,
+      startDate: string,
+      streamRate: number,
+      discussionUrl: string
+    },
     maxHints: number,
     maxBugs: number,
     problems: id: {
@@ -15,6 +22,8 @@ export class UserDb {
   }
   */
   static data = JSON.parse(localStorage.getItem("stored")) || {
+    loggedIn: false,
+    stream: null,
     maxHints: 0,
     maxBugs: 0,
     problems: {},

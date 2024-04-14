@@ -8,11 +8,12 @@ LeetStream is a static website designed to help users improve their coding skill
 
 Using LeetStream is simple:
 
+1. **Create or Join a Stream**: **First**, create a stream by providing a title, start date, stream rate (problems/day), and a discussion group URL (WhatsApp, Telegram, Discord). Share this link with friends or a study group to solve problems together. **Second**, join the stream, you created or that was shared via the shared URL.
 1. **Solve the Daily Problem**: Each day, you'll be presented with a LeetCode problem categorized under one of the 26 coding patterns. Solve the problem to the best of your ability. **Remember, once the day is over, you won't be able to revisit or solve the problem again, so make it a habit to solve it daily.**
-2. **Submit Data**: After solving the problem, submit your data to calculate your score. Include information such as bugs encountered, hints used, time taken, and the type of solution (optimal, sub-optimal, brute force, ...).
-3. **Review Results**: Once you've submitted your data, review your score. You can download a **CSV file** containing your scores to further analyze your performance using spreadsheet programs. This file will help you gain deeper insights into your strengths and areas for improvement.
-4. **Access Study Material**: Explore links to articles and videos related to the coding patterns present in the problem you just solved. Use this material to deepen your understanding and improve your skills.
-5. **Repeat Daily**: Come back each day to tackle a new problem, track your progress, and continue learning. Remember, consistency is key, as you won't have another chance to solve missed problems.
+1. **Submit Data**: After solving the problem, submit your data to calculate your score. Include information such as bugs encountered, hints used, time taken, and the type of solution (optimal, sub-optimal, brute force, ...).
+1. **Review Results**: Once you've submitted your data, review your score. You can download a **CSV file** containing your scores to further analyze your performance using spreadsheet programs. This file will help you gain deeper insights into your strengths and areas for improvement.
+1. **Access Study Material**: Explore links to articles and videos related to the coding patterns present in the problem you just solved. Use this material to deepen your understanding and improve your skills.
+1. **Repeat Daily**: Come back each day to tackle a new problem, track your progress, and continue learning. Remember, consistency is key, as you won't have another chance to solve missed problems.
 
 ## Security and Privacy
 

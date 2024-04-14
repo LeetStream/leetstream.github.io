@@ -157,7 +157,7 @@ class ProblemForm extends Component {
           <textarea name="note" id="note"></textarea>
         </div>
 
-        <button type="done" id="done"><span>0.00</span> Done</button>
+        <button class="submit" type="done" id="done"><span>0.00</span> Done</button>
       </form>
     </div>
     `;

@@ -51,4 +51,19 @@ function activeNavLink() {
     `nav li a[href="${location.hash || "/"}"]`
   );
   if (activeLink) activeLink.classList.add("active");
+  if (UserDb.get().loggedIn) {
+    document.querySelector("#export").style.display = "block";
+    document.querySelector("#logout").style.display = "block";
+  }
 }
+
+document.querySelector("#logout").addEventListener("click", () => {
+  if (
+    !confirm(
+      `Are you sure you want to log out from ${UserDb.get().stream.title}?`
+    )
+  )
+    return;
+  UserDb.clear();
+  location.hash = "newStream";
+});

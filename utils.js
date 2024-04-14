@@ -20,3 +20,7 @@ export function removeUnicodeAndLowerCase(str) {
     .toLowerCase()
     .trim();
 }
+
+export function sanitizeInput(input) {
+  return input ? input.replace(/</g, "&lt;").replace(/>/g, "&gt;") : "";
+}

@@ -1,13 +1,14 @@
 import { Difficulty } from "./difficulty.js";
 import { patterns } from "./patterns.js";
 import { sites } from "./sites.js";
+import { UserDb } from "./userDb.js";
 
 export function getProblemOfDay() {
   const currentDate = new Date();
   currentDate.toLocaleString("en-US", { timeZone: "Africa/Cairo" });
   return (
     Math.floor(
-      (currentDate.getTime() - new Date("2024-04-07T00:00:00").getTime()) /
+      (currentDate.getTime() - new Date(`${UserDb.get().stream.startDate}T00:00:00`).getTime()) /
         (1000 * 3600 * 24)
     ) % problems.length
   );
@@ -6094,7 +6095,7 @@ export const problems = [
     id: "L84",
     title: "Largest Rectangle in Histogram",
     difficulty: Difficulty.HARD,
-    patterns: ["patterns.ChallengeYourself"],
+    patterns: [patterns.ChallengeYourself],
     url: "https://leetcode.com/problems/largest-rectangle-in-histogram",
     solutions: [
       {
