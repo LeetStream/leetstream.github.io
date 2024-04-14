@@ -6094,7 +6094,7 @@ export const problems = [
     id: "L84",
     title: "Largest Rectangle in Histogram",
     difficulty: Difficulty.HARD,
-    patterns: [patterns.ChallengeYourself],
+    patterns: ["patterns.ChallengeYourself"],
     url: "https://leetcode.com/problems/largest-rectangle-in-histogram",
     solutions: [
       {
