@@ -7,6 +7,7 @@ export const routers = {
   usage: "<markdown-renderer src='./README.md'/>",
   newStream: "<new-stream/>",
   joinStream: "<join-stream/>",
+  problemsDistribution: "<problems-distribution/>",
 };
 
 export function routingRules() {
