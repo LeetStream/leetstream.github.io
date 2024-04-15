@@ -35,13 +35,14 @@ class ProblemForm extends Component {
       companiesList.insertBefore(listItem, companiesList.firstChild);
     });
 
-    const hints = this.querySelector("#hints");
-    const bugs = this.querySelector("#bugs");
-    const time = this.querySelector("#time");
-    const solutionType = this.querySelector("#solution-type");
-    const solutionUrl = this.querySelector("#ur-solution");
-    const note = this.querySelector("#note");
-    const done = this.querySelector("#done");
+    const form = this.querySelector("#problem-form");
+    const hints = form.querySelector("#hints");
+    const bugs = form.querySelector("#bugs");
+    const time = form.querySelector("#time");
+    const solutionType = form.querySelector("#solution-type");
+    const solutionUrl = form.querySelector("#ur-solution");
+    const note = form.querySelector("#note");
+    const done = form.querySelector("#done");
 
     function updateScore() {
       const bugsValue = +bugs.value;
@@ -63,7 +64,8 @@ class ProblemForm extends Component {
       e.addEventListener("input", updateScore)
     );
 
-    done.addEventListener("click", () => {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
       const bugsValue = +bugs.value;
       const hintsValue = +hints.value;
       if (bugsValue > stored.maxBugs || hintsValue > stored.maxHints) {
@@ -116,26 +118,26 @@ class ProblemForm extends Component {
         <!-- Icons: iconoir.com , simpleicons.org -->
         <li><contribute-button></contribute-button></li>
       </ul>
-      <form>
+      <form id="problem-form">
         <div class="metrics">
           <div class="labeled-input">
             <label for="hints">Hints 💡</label>
-            <input type="number" name="hints" id="hints" min="0">
+            <input type="number" name="hints" id="hints" min="0" required>
           </div>
 
           <div class="labeled-input">
             <label for="bugs">Bugs 🐛</label>
-            <input type="number" name="bugs" id="bugs" min="0">
+            <input type="number" name="bugs" id="bugs" min="0" required>
           </div>
 
           <div class="labeled-input">
             <label for="time">Time ⏱️</label>
-            <input type="number" name="time" id="time" min="1">
+            <input type="number" name="time" id="time" min="1" required>
           </div>
 
           <div class="labeled-input">
             <label for="solution-type">Solution Type 🛠️</label>
-            <select name="solution-type" id="solution-type">
+            <select name="solution-type" id="solution-type" required>
               <option value="0">🚶‍♂️ Off Track</option>
               <option value="1">🤦‍♂️ Got Completely Stuck</option>
               <option value="2">💪 Almost Worked (Brute Force)</option>

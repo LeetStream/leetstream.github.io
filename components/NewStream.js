@@ -32,12 +32,12 @@ class NewStream extends Component {
         <div>
           <div class="labeled-input">
             <label for="title">Title</label>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" id="title" required>
           </div>
         
           <div class="labeled-input">
             <label for="start-date">Start Date (Africa/Cairo time)</label>
-            <input type="date" name="start-date" id="start-date">
+            <input type="date" name="start-date" id="start-date" required>
           </div>
 
           <div class="labeled-input">
@@ -47,7 +47,7 @@ class NewStream extends Component {
 
           <div class="labeled-input">
             <label for="discussion-url">Discussion Group URL (e.g., WhatsApp, Telegram, Discord, etc.)</label>
-            <input type="url" name="discussion-url" id="discussion-url">
+            <input type="url" name="discussion-url" id="discussion-url" required>
           </div>
 
           <button class="submit" id="create-stream">Create Stream</button>
