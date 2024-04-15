@@ -39,7 +39,13 @@ export class UserDb {
   }
 
   static clear() {
-    UserDb.data = { maxHints: 0, maxBugs: 0, problems: {} };
+    UserDb.data = {
+      loggedIn: false,
+      stream: null,
+      maxHints: 0,
+      maxBugs: 0,
+      problems: {},
+    };
     localStorage.setItem("stored", JSON.stringify(UserDb.data));
   }
 }
