@@ -278,7 +278,6 @@ button>span {
   padding: .375rem .75rem;
   font-size: 1rem;
   font-weight: 500;
-  display: none;
 }
 
 #logout {
@@ -288,6 +287,9 @@ button>span {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
+}
+
+#problem-of-today, #export, #logout {
   display: none;
 }
 

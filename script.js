@@ -52,15 +52,16 @@ function activeNavLink() {
   );
   if (activeLink) activeLink.classList.add("active");
   if (UserDb.get().loggedIn) {
-    document.querySelector("#export").style.display = "block";
-    document.querySelector("#logout").style.display = "block";
+    document.querySelector("#export").style.display = "inline";
+    document.querySelector("#logout").style.display = "inline";
+    document.querySelector("#problem-of-today").style.display = "inline";
   }
 }
 
 document.querySelector("#logout").addEventListener("click", () => {
   if (
     !confirm(
-      `Are you sure you want to log out from ${UserDb.get().stream.title}?`
+      `YOUR PROGRESS WILL BE LOST. Are you sure you want to log out from ${UserDb.get().stream.title}?`
     )
   )
     return;

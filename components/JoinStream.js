@@ -12,7 +12,7 @@ class JoinStream extends Component {
       if (
         stored.loggedIn &&
         !confirm(
-          `Are you sure you want to log out from ${stored.stream.title} stream?`
+          `YOUR PROGRESS WILL BE LOST. Are you sure you want to log out from ${stored.stream.title} stream?`
         )
       )
         return;
