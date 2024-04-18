@@ -8,7 +8,8 @@ export function getProblemOfDay() {
   currentDate.toLocaleString("en-US", { timeZone: "Africa/Cairo" });
   return (
     Math.floor(
-      (currentDate.getTime() - new Date(`${UserDb.get().stream.startDate}T00:00:00`).getTime()) /
+      (currentDate.getTime() -
+        new Date(`${UserDb.get().stream.startDate}T00:00:00`).getTime()) /
         (1000 * 3600 * 24)
     ) % problems.length
   );
@@ -49,16 +50,21 @@ export const problems = [
     tags: ["Math", "Binary Search"],
   },
   {
-    id: "L243",
+    id: "N924",
     title: "Shortest Word Distance",
     difficulty: Difficulty.EASY,
     patterns: [patterns.Warmup],
-    url: "https://leetcode.ca/all/243.html",
+    url: "https://www.lintcode.com/problem/924",
     solutions: [
       {
         title: "Solution: Shortest Word Distance",
         site: {},
         url: "https://aaronice.gitbook.io/lintcode/hash-table/shortest-word-distance",
+      },
+      {
+        title: "Shortest Word Distance - LeetCodeCa",
+        site: {},
+        url: "https://leetcode.ca/all/243.html",
       },
     ],
     companies: [
