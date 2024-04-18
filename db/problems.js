@@ -66,6 +66,11 @@ export const problems = [
         site: {},
         url: "https://leetcode.ca/all/243.html",
       },
+      {
+        title: "Shortest Word Distance - AlgoMonster",
+        site: {},
+        url: "https://algo.monster/liteproblems/243",
+      },
     ],
     companies: [
       "Amazon",
