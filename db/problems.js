@@ -2792,11 +2792,11 @@ export const problems = [
     tags: ["Array", "Binary Search", "Grind75"],
   },
   {
-    id: "L271",
+    id: "N659",
     title: "Encode and Decode Strings",
     difficulty: Difficulty.MEDIUM,
     patterns: [patterns.BitwiseManipulation],
-    url: "https://leetcode.ca/2016-08-27-271-Encode-and-Decode-Strings/",
+    url: "https://www.lintcode.com/problem/659/",
     solutions: [
       {
         title: "Solution: Encode and Decode Strings",
@@ -2807,6 +2807,11 @@ export const problems = [
         title: "Encode and Decode Strings - Leetcode 271 - Python",
         site: sites.yt,
         url: "https://www.youtube.com/watch?v=B1k_sxOSgv8",
+      },
+      {
+        title: "Encode and Decode Strings - LeetCodeCa",
+        site: {},
+        url: "https://leetcode.ca/2016-08-27-271-Encode-and-Decode-Strings/",
       },
     ],
     companies: [],
