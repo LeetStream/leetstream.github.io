@@ -87,9 +87,15 @@ export const problems = [
     id: "L345",
     title: "Reverse Vowels of a String",
     difficulty: Difficulty.EASY,
-    patterns: [patterns.Warmup],
+    patterns: [patterns.Warmup, patterns.TwoPointers],
     url: "https://leetcode.com/problems/reverse-vowels-of-a-string",
-    solutions: [],
+    solutions: [
+      {
+        title: "Reverse Vowels of a String | AlgoMonster",
+        site: {},
+        url: "https://algo.monster/liteproblems/345",
+      },
+    ],
     companies: ["Amazon", "Apple", "Google"],
     tags: ["Two Pointers", "String"],
   },
