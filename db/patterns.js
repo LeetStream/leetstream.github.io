@@ -24,6 +24,11 @@ export const patterns = {
         url: "https://dvpr.gitbook.io/coding-interview-patterns/2.-pattern-two-pointers/2.0-introduction",
         site: {},
       },
+      {
+        title: "Tech Interview Pattern | Two Pointers Introduction",
+        url: "https://algo.monster/problems/two_pointers_intro",
+        site: {},
+      },
     ],
   },
   FastAndSlowPointers: {
@@ -108,7 +113,13 @@ export const patterns = {
   },
   DynamicProgramming: {
     name: "Dynamic Programming",
-    articles: [],
+    articles: [
+      {
+        title: "Dynamic Programming Introduction and Patterns",
+        url: "https://algo.monster/problems/dynamic_programming_intro",
+        site: {},
+      },
+    ],
   },
   CyclicSort: {
     name: "Cyclic Sort",
@@ -122,7 +133,13 @@ export const patterns = {
   },
   TopologicalSort: {
     name: "Topological Sort",
-    articles: [],
+    articles: [
+      {
+        title: "Topological Sort | Topological Order",
+        url: "https://algo.monster/problems/topo_intro",
+        site: {},
+      },
+    ],
   },
   Matrices: {
     name: "Matrices",
@@ -134,11 +151,23 @@ export const patterns = {
   },
   Graphs: {
     name: "Graphs",
-    articles: [],
+    articles: [
+      {
+        title: "Graph Fundamentals",
+        url: "https://algo.monster/problems/graph_intro",
+        site: {},
+      },
+    ],
   },
   TreeDepthFirstSearch: {
     name: "Tree Depth First Search",
-    articles: [],
+    articles: [
+      {
+        title: "DFS on Trees",
+        url: "https://algo.monster/problems/dfs_on_trees_intro",
+        site: {},
+      },
+    ],
   },
   TreeBreadthFirstSearch: {
     name: "Tree Breadth First Search",
@@ -146,6 +175,11 @@ export const patterns = {
       {
         title: "Pattern: Tree Breadth First Search > Introduction",
         url: "https://dvpr.gitbook.io/coding-interview-patterns/untitled/7.0-introduction",
+        site: {},
+      },
+      {
+        title: "Breadth First Search on Trees",
+        url: "https://algo.monster/problems/bfs_intro",
         site: {},
       },
     ],
@@ -164,7 +198,13 @@ export const patterns = {
   },
   UnionFind: {
     name: "Union Find",
-    articles: [],
+    articles: [
+      {
+        title: "Union Find | Disjoint Set Union Data Structure Introduction",
+        url: "https://algo.monster/problems/dsu_intro",
+        site: {},
+      },
+    ],
   },
   CustomDataStructures: {
     name: "Custom Data Structures",
@@ -172,7 +212,13 @@ export const patterns = {
   },
   BitwiseManipulation: {
     name: "Bitwise Manipulation",
-    articles: [],
+    articles: [
+      {
+        title: "Bitmask Introduction",
+        url: "https://algo.monster/problems/bitmask_intro",
+        site: {},
+      },
+    ],
   },
   ChallengeYourself: {
     name: "Challenge Yourself",

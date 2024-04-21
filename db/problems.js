@@ -3498,7 +3498,13 @@ export const problems = [
     difficulty: Difficulty.MEDIUM,
     patterns: [patterns.DynamicProgramming],
     url: "https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/",
-    solutions: [],
+    solutions: [
+      {
+        title: "0-1 Knapsack",
+        site: {},
+        url: "https://algo.monster/problems/knapsack_intro",
+      },
+    ],
     companies: [],
     tags: ["Dynamic Programming", "Greedy"],
   },
