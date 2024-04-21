@@ -113,17 +113,26 @@ export const problems = [
     id: "L1960",
     title: "Check if the Sentence Is Pangram",
     difficulty: Difficulty.EASY,
-    patterns: [patterns.Warmup],
+    patterns: [
+      patterns.Warmup,
+      patterns.BitwiseManipulation,
+      patterns.HashMaps,
+    ],
     url: "https://leetcode.com/problems/check-if-the-sentence-is-pangram",
     solutions: [
       {
-        title: "Solution: Pangram",
+        title: "Solution: Pangram - Bitwise Manipulation",
+        site: {},
+        url: "https://algo.monster/liteproblems/1832",
+      },
+      {
+        title: "Solution: Pangram - HashSet",
         site: sites.DesignGurus,
         url: "https://www.designgurus.io/course-play/grokking-the-coding-interview/doc/63d9b9024bb2155485a1a03a",
       },
     ],
     companies: [],
-    tags: ["Hash Table", "String"],
+    tags: ["Hash Table", "String", "Bit Manipulation", "Bitmask"],
   },
   {
     id: "L20",
