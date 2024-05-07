@@ -73,7 +73,7 @@ class ProblemForm extends Component {
         stored.maxHints = Math.max(stored.maxHints, hintsValue);
 
         Object.entries(stored.problems).forEach(
-          (ki, p) =>
+          ([ki, p]) =>
             (p.score = calculateScore(
               stored.maxBugs,
               stored.maxHints,
